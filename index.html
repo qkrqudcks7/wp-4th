@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>width , height 실습</title>
+    <style>
+        body {
+            width: 1000px;
+            margin: auto;
+            border: 1px solid black;
+        }
+       .nav , .left{
+           display: flex;
+           height: 50px;
+           align-items: center;
+       }
+       .left {
+           margin-right: auto;
+       }
+       .item {
+           margin: 0 20px;
+       }
+       header {
+
+       }
+       .textt {
+            left: 100px;
+            width: 450px;
+            bottom: 140px;
+            color: white;
+            font-size: 2.5em; 
+            font-weight: bold; 
+            position: absolute;
+
+       }
+       .texty {
+            left: 200px;
+            width: 600px;
+            bottom: 50px;
+            color: white;
+            font-size: 1.5em; 
+            font-weight: bold; 
+            position: absolute;
+       }
+       .container1 {
+           display: flex;
+
+           width: 1000px; height: 400px;
+       }
+       .container1-item {
+            width: 500px;
+            height: 400px;
+       }
+       .container1-item:nth-child(1) {
+           width: 650px;
+           padding: 20px;
+       }
+       .container1-item:nth-child(2) {
+           width: 350px;
+           padding: 20px;
+       }
+       .container2 {
+           display: flex;
+           width: 1000px; height: 250px;
+       }
+       .container2-item {
+           width: 500px; height: 250px;
+       }
+       .container2-item:nth-child(1) {
+            width: 350px;
+            padding: 20px;
+       }
+       .container2-item:nth-child(2) {
+           width: 700px;
+           padding: 20px;
+       }
+       
+       footer {
+            display: flex;
+            background-color: gray;
+            width: 1000px;
+            height: 150px;
+            align-items: center;
+            font-weight: bold;
+            
+       }
+       .flex-item {
+            padding-left: 430px;
+       }
+    </style>
+</head>
+<body>
+<header>
+
+    <div class="nav">
+        <div class="left">
+            <div class="item">Menu 1</div>
+            <div class="item">Menu 2</div>
+            <div class="item">Menu 3</div>
+        </div>
+    </div>
+    
+    <div style="position: relative">
+        <img src="https://cdn.pixabay.com/photo/2020/10/09/06/09/rabbit-5639615_960_720.jpg" width="1000" height="250">
+        <div class="textt">
+            MY HOMEPAGE
+        </div>
+        <div class="texty">
+            pront-end is so hard to me.
+        </div>
+    </div>
+</header>
+<div class="container1">
+    <div class="container1-item">
+        <h3>Section 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Placeat at facilis error quidem enim eligendi nam eaque,<br> maxime vitae voluptatem pariatur voluptate exercitationem laboriosam<br>dolores ex mollitia harum fugit magnam reiciendis iure, adipisci<br>architecto modi ipsa aliquam.Odit, dicta consequatur<br>distinctio possimus praesentium at reprehenderit<br>illum repellendus perspiciatis ab quidem!
+        </p>
+    </div>
+    <div class="container1-item">
+        <h3>Section 2</h3>
+        <p>Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.<br> Placeat at facilis error quidem<br>enim eligendi nam eaque<br>maxime vitae voluptatem pariatur<br>voluptate exercitationem...</p>
+    </div>
+</div>
+<div class="container2">
+    <div class="container2-item">
+        <img src="https://media.istockphoto.com/photos/cute-happy-dog-playing-with-a-stick-picture-id1184184060" width="350" height="200">
+    </div>
+    <div class="container2-item">
+        <h3>Section 2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat<br>at facilis error quidem enim eligendi nam eaque, maxime...</p>
+    </div>
+</div>
+<footer>
+    <div class="flex-item">2016024023 박병찬</div>
+</footer>
+</body>
+</html>
